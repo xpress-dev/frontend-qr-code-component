@@ -1,0 +1,74 @@
+/* 
+- White: hsl(0, 0%, 100%)
+- Light gray: hsl(212, 45%, 89%)
+- Grayish blue: hsl(220, 15%, 55%)
+- Dark blue: hsl(218, 44%, 22%)
+*/
+
+:root {
+  /* Colors */
+  --primary-white: hsl(0, 0%, 100%);
+  --primary-light-gray: hsl(212, 45%, 89%);
+  --primary-gray-blue: hsl(220, 15%, 55%);
+  --primary-dark-blue: hsl(218, 44%, 22%);
+  /* Font Family */
+  --font-family: "Outfit", sans-serif;
+  /* Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  /* Font Size */
+  --font-size-large: 1.1rem;
+  --font-size-normal: 0.9rem;
+}
+
+/* Universal Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background-color and centering the card, full height body*/
+body {
+  background-color: var(--primary-light-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Card flex box column direction setting, rounded corners, background, padding*/
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 15px;
+  background-color: var(--primary-white);
+  padding: 1rem;
+  max-width: 16rem;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Rounded Corners and Size */
+.card__image {
+  border-radius: 5px;
+}
+
+/* Bold Text Styling */
+.card__main__text {
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family);
+  color: var(--primary-dark-blue);
+  text-align: center;
+  font-size: var(--font-size-large);
+}
+
+/* Light Text Styling */
+.card__description {
+  font-weight: var(--font-weight-normal);
+  font-family: var(--font-family);
+  color: var(--primary-gray-blue);
+  text-align: center;
+  font-size: var(--font-size-normal);
+  margin-bottom: 1rem;
+}
